@@ -6,6 +6,11 @@ export default function webinars(){
 
     const webinars = 
     [
+        { date: '03-06-2024', title: 'Veteran Friendly Practices', videoLink: 'https://www.youtube.com/embed/ZeGwaiKf9eY?si=FGlvFcNUrpZNErIA' },
+        { date: '03-06-2024', title: 'Register With a GP Surgery', videoLink: 'https://www.youtube.com/embed/aJPIBKG_q8g?si=RITVBnPteo8ysbpz' },
+        { date: '03-06-2024', title: 'IGPM Appraisal Toolkit', videoLink: 'https://www.youtube.com/embed/VCg_T71txeg?si=jsHcUpV9ELfpvy_V' },
+        { date: '03-06-2024', title: 'Understanding the appraisal', videoLink: 'https://www.youtube.com/embed/sxFVE3-vndQ?si=NdvS-1rVV-uEhI6A' },
+        { date: '03-06-2024', title: 'Launch of Right Care First Time', videoLink: 'https://www.youtube.com/embed/NmkFx6OkTjo?si=0UQY4d1cLXEsEPZ0' },
         { date: '29-11-2022', title: 'Looking after your general practice managers', videoLink: 'https://www.youtube.com/embed/Drri7nRh1l8?si=7iWk392I0CnWy4YF' },
         { date: '23-11-2022', title: 'The RCGP active practice charter', videoLink: 'https://www.youtube.com/embed/78p1T-bPKJE?si=XRHBSfhRT9_tkvlB'},
         { date: '28-09-2022', title: 'How to make your practice greender', videoLink: 'https://www.youtube.com/embed/IEN54OP7_AA?si=PylV0UfQHgMrIRPJ' },
@@ -20,10 +25,10 @@ export default function webinars(){
         { date: '10-07-2021', title: 'Summer series session one', videoLink: 'https://www.youtube.com/embed/hlNujxpNfOc?si=stLSUVCx6f1JtHYD' },
         { date: '20-05-2021', title: 'The one before we went viral!', videoLink: 'https://www.youtube.com/embed/XEcNj3RPj0Y?si=50HovHL67CjQ6TX0' },
         { date: '03-04-2021', title: 'IGPM recognition, representation and membership', videoLink: 'https://www.youtube.com/embed/q8LkfLhwiCY?si=zIGfk9RI_sNI8Zyx' },
-        { date: '03-06-2024', title: 'Veteran Friendly Practices', videoLink: 'https://www.youtube.com/embed/ZeGwaiKf9eY?si=FGlvFcNUrpZNErIA' },
-        { date: '03-06-2024', title: 'Register With a GP Surgery', videoLink: 'https://www.youtube.com/embed/aJPIBKG_q8g?si=RITVBnPteo8ysbpz' },
 
 
+
+            
     ]
 
 
