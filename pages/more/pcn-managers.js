@@ -9,7 +9,6 @@ export default function pcnManagers(){
         <Layout>
             <ResponsiveContainer>
                 <PcnManagers/>
-
             </ResponsiveContainer>
         </Layout>
 
