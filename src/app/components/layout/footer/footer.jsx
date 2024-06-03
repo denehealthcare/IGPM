@@ -21,6 +21,8 @@ export default function Footer(){
         { title: 'Our Representatives', href: '/about-igpm/our-representatives' },
         { title: 'Webinars', href: '/webinars' },
         { title: 'Membership inclusion criteria', href: '/more/membership-inclusion-criteria' },
+        { title: 'Our Campaigns', href: '/about-igpm/our-campaigns' },
+
 
     ];
 
