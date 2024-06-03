@@ -3,8 +3,6 @@ import Link from "next/link";
 export default function Footer(){
 
     const more =[
-
-
         {title: 'Accreditation', href: '/accreditation' },
         {title: 'Membership', href: '/membership' },
         {title: 'Get involved', href: '/get-involved' },
@@ -12,9 +10,7 @@ export default function Footer(){
         {title: 'IGPM Wales', href: '/more/igpm-wales' },
         {title: 'Toolkits', href: '/toolkits' },
         {title: 'Regulatory Process', href: '/more/regulatory-process' },
-
-
-
+        {title: 'PCN Managers', href: '/more/pcn-managers' },
 
     ];
 

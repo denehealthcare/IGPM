@@ -24,20 +24,12 @@ export default function webinars(){
         { date: '17-07-2021', title: 'Summer series session two', videoLink: 'https://www.youtube.com/embed/su4hWx8FqKg?si=1n5bCDRUN-bAlCQG' },
         { date: '10-07-2021', title: 'Summer series session one', videoLink: 'https://www.youtube.com/embed/hlNujxpNfOc?si=stLSUVCx6f1JtHYD' },
         { date: '20-05-2021', title: 'The one before we went viral!', videoLink: 'https://www.youtube.com/embed/XEcNj3RPj0Y?si=50HovHL67CjQ6TX0' },
-        { date: '03-04-2021', title: 'IGPM recognition, representation and membership', videoLink: 'https://www.youtube.com/embed/q8LkfLhwiCY?si=zIGfk9RI_sNI8Zyx' },
-
-
-
-            
+        { date: '03-04-2021', title: 'IGPM recognition, representation and membership', videoLink: 'https://www.youtube.com/embed/q8LkfLhwiCY?si=zIGfk9RI_sNI8Zyx' },    
     ]
-
-
-
 
     return(
         <>
             <Layout>
-
                 <PageHeader
                     backgroundImage={'/images/webinars-large.png'}
                     title={'Webinars'}
