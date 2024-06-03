@@ -35,16 +35,6 @@ export default function Search({handleFormSubmit, fetchedData, keyword, setError
 
     };
 
-
-
-
-
-
-    const handleFilter = () => {
-
-    };
-
-
     return(
         <main className="mb-[70px] md:mb-[114px]">
 
@@ -72,8 +62,8 @@ export default function Search({handleFormSubmit, fetchedData, keyword, setError
                             <li key={data.id} className="border-l-[10px] flex flex-col gap-[4px] border-l-[#72C6ED] border-t-[1px] border-t-[#D9D9D9] border-r-[1px] border-r-[#D9D9D9] border-b-[1px] border-b-[#D9D9D9] py-[20px] px-[28px] w-full max-w-[705px] shadow-md ">
                                 <p className="text-[#1C4F70] text-[1.5rem] onset-bold">{data.name}</p>
                                 <p className="text-[#575757]">{data.county}</p>
-                                <p className="text-[#575757]">Registration number: <b>{data.date}</b></p>
-                                <p className="text-[#575757]">Accreditation achieved: <b>{data.registration}</b></p>
+                                <p className="text-[#575757]">Registration number: <b>{data.registration}</b></p>
+                                <p className="text-[#575757]">Accreditation achieved: <b>{data.date}</b></p>
 
                                 {data.active ? (
                                     <div className="bg-[#89d67045] flex gap-[6px] items-center justify-center w-[85px] rounded-[8px] mt-[13px]">

@@ -11,9 +11,7 @@ export default function Footer(){
         {title: 'Toolkits', href: '/toolkits' },
         {title: 'Regulatory Process', href: '/more/regulatory-process' },
         {title: 'PCN Managers', href: '/more/pcn-managers' },
-
     ];
-
 
     const about = [
         { title: 'Our Directors', href: '/our-directors' },
@@ -22,8 +20,6 @@ export default function Footer(){
         { title: 'Webinars', href: '/webinars' },
         { title: 'Membership inclusion criteria', href: '/more/membership-inclusion-criteria' },
         { title: 'Our Campaigns', href: '/about-igpm/our-campaigns' },
-
-
     ];
 
 

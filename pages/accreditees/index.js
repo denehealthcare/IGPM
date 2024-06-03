@@ -35,15 +35,14 @@ export default function index(){
 
         setLoading(true);
 
-         api.get('/book')
+         api.get('/book?per_page=100')
             .then(resp => {
 
+                console.log(resp);
+
                 setLoading(true);
-
                 const retrievedData = [];
-
                 resp.data.map(data => {
-
                     retrievedData.push({
                         name: data.acf.accreditee_name,
                         active: data.acf.active,
@@ -51,22 +50,15 @@ export default function index(){
                         date: data.acf.date_achieved,
                         registration: data.acf.registration_number
                     })
-
                 })
-                
                 setKeyword(data.search);
                 setFetchedData(retrievedData);
                 setSubmitted(true);
                 setLoading(false);
-
             })
-
             .catch(err => {
-
                 setLoading(false);
                 setError(true);
-
-
             });
  
         }
