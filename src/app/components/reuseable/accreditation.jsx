@@ -128,6 +128,10 @@ export default function Accreditation(){
                     Evidence needs to be supplied in each of 10 domains and the awarding panel must be satisfied that an aggregate pass level has been reached in all of these domains
                 </p>
 
+                <a href="https://dashboard.igpm.org.uk/wp-content/uploads/2024/06/IGPM-Accreditation-Framework-England-FINAL.pdf">
+                    <button className="bg-[#1C4F70] hover:bg-[#72C6ED] px-[29px] py-[9px] text-white rounded-[13px] text-[15px] hover:bg-[#83C5E9]:flex mb-5">Accreditation Framework</button>
+                </a>
+
 
                 <h3 className="text-[1.56rem] text-[#484848] mb-5">Suitability</h3>
 
