@@ -37,9 +37,6 @@ export default function index(){
 
          api.get('/book?per_page=100')
             .then(resp => {
-
-                console.log(resp);
-
                 setLoading(true);
                 const retrievedData = [];
                 resp.data.map(data => {
