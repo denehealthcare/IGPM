@@ -64,7 +64,14 @@ export default function Id (){
                     retrievedPost.date = formattedDateString;
                     retrievedPost.category = resp.data.categories[0];
                     retrievedPost.content = resp.data.content.rendered;
-                    retrievedPost.image = resp.data._embedded["wp:featuredmedia"][0].source_url;
+                    
+                    //If a featured image has been included add to the pushed object, if not do not add a key value
+                    try {
+                        retrievedPost.image = post._embedded["wp:featuredmedia"][0].source_url;
+                    }
+                    catch {
+                        retrievedPost.image = "/images/default-news-image.jpg"
+                    }
 
                     return api.get('/categories')
 

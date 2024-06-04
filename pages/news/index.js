@@ -13,7 +13,6 @@ import 'animate.css';
 
 
 export default function news(){
-
     const options = {
         rootMargin: '0px',
         threshold: 0,
@@ -23,13 +22,10 @@ export default function news(){
     //Intersection Observer
     const { ref, inView, entry } = useInView(options);
 
-
     const loader = useContext(LoaderContext);
-
 
     //The state for displaying posts
     const [posts, setPosts] = useState([]);
-
     const [error, setError] = useState(false);
 
     //A state for tracking all posts retrieved originally from the api
@@ -45,47 +41,29 @@ export default function news(){
     useEffect(() => {
 
         loader.setLoading(true);
-
         const promises = [];
-
 
         //Get all the categories
         promises.push(api.get('/categories')
 
             .then(resp => {
-
-
                 resp.data.map(category => {
-
                     const retrievedCategory = {};
-
                     retrievedCategory.id = category.id;
                     retrievedCategory.name = category.name;
-
                     retrievedCategories.push(retrievedCategory);
-
                 });
-
-
             })
-
             .catch(err => {
-
                 setError(true);
-
             })
-        
         )
         
         //Get all the posts
         promises.push(api.get('/posts?_embed')
 
             .then(function (resp) {
-
-
-
                 resp.data.map(post => {
-
                     const retrievedPost = {};
 
                     //format date
@@ -101,24 +79,22 @@ export default function news(){
                     retrievedPost.category = post.categories[0];
                     retrievedPost.category_id = post.categories[0];
                     retrievedPost.excerpt = post.excerpt.rendered;
-                    retrievedPost.image = post._embedded["wp:featuredmedia"][0].source_url;
+                    
+                    //If a featured image has been included add to the pushed object, if not do not add a key value
+                    try{
+                        retrievedPost.image = post._embedded["wp:featuredmedia"][0].source_url;                   
+                    }
+                    catch{
+                        retrievedPost.image = "/images/default-news-image.jpg"
+                    }
 
                     retrievedPosts.push(retrievedPost);
-
                 });
-
             })
 
             .catch(function (err) {
-
                 console.log(err)
-
-                console.log('hit')
-
-
-
                 setError(true);
-
             }));
 
 
@@ -190,18 +166,11 @@ export default function news(){
 
             const filteredPosts = previousPosts.filter(post => categoryFilter.includes(post.category_id));
 
-            console.log(filteredPosts);
-
             setPaginatePosts(filteredPosts);
-
-            console.log(paginatePosts);
-
-
 
         } else if(categoryFilter.length < 1) {
 
             setPaginatePosts(previousPosts);
-
 
         }
 

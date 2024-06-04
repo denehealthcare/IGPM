@@ -2,11 +2,14 @@ import Link from "next/link";
 
 export default function PostItem({post}){
 
+    console.log(post);
+
+
     return(
         <>
             <div className="flex flex-col w-[232px] relative">
 
-                <img src={post.image} className="w-[232px]"></img>
+                <img src={post.image} className="max-w-[200px] max-h-[150px]"></img>
                 <p className="text-[#1C4F70] text-[13px] mt-[14px] onset-semibold">{post.category}</p>
 
                 <div className="flex gap-2 items-center">
