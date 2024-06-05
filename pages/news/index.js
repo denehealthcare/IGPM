@@ -60,7 +60,7 @@ export default function news(){
         )
         
         //Get all the posts
-        promises.push(api.get('/posts?_embed')
+        promises.push(api.get('/posts?per_page=100&_embed')
 
             .then(function (resp) {
                 resp.data.map(post => {
