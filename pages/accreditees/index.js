@@ -12,33 +12,32 @@ import Error from "next/error";
 
 export default function index(){
 
-
     //Form validation
     const {register, handleSubmit, formState:{ errors }} = useForm();
-
+    
     const {loading, setLoading} = useContext(LoaderContext);
-
     //State to control which component is diplayed
     const [submitted, setSubmitted] = useState(false);
-
     //Error state
     const [error, setError] = useState(false);
-
     //Data retrieved by api
     const [fetchedData, setFetchedData] = useState([]);
-
     //State for keyword entered by user
     const [keyword, setKeyword] = useState('');
-
 
     const handleFormSubmit = (data) => {
 
         setLoading(true);
+        const promises = [];
+        const resultsPerPage = 40;
 
-         api.get('/book?per_page=100')
+         api.get(`/book?per_page=${resultsPerPage}`)
             .then(resp => {
+
                 setLoading(true);
-                const retrievedData = [];
+                const retrievedData = []; //Array to hold all results set
+
+                //Make first request and push to results set
                 resp.data.map(data => {
                     retrievedData.push({
                         name: data.acf.accreditee_name,
@@ -48,11 +47,46 @@ export default function index(){
                         registration: data.acf.registration_number
                     })
                 })
-                setKeyword(data.search);
-                setFetchedData(retrievedData);
-                setSubmitted(true);
-                setLoading(false);
+
+                //Wordpress api will only return max 100 results per page, the rest will be paginated.
+                //If results are paginated loop through and add to result set
+                if (resp.headers["x-wp-totalpages"] > 1) {
+
+                    //Number of pages given by the api
+                    const totalPages = Number(resp.headers["x-wp-totalpages"]);
+
+                    //for each page number make another request and add to the result set
+                    for (let pageNumber = 2; pageNumber <= totalPages; pageNumber++) {
+                        promises.push(api.get(`/book?per_page=${resultsPerPage}&page=${pageNumber}`)
+                            .then(resp => {
+                                //For each request push the page results to the result set
+                                resp.data.map(data => {
+                                    retrievedData.push({
+                                        name: data.acf.accreditee_name,
+                                        active: data.acf.active,
+                                        county: data.acf.county,
+                                        date: data.acf.date_achieved,
+                                        registration: data.acf.registration_number
+                                    })
+                                })
+                            })
+                            .catch(err => {
+                                setLoading(false);
+                                setError(true);
+                            })
+                        );
+                    }
+                }
+                
+                Promise.all(promises)
+                    .then(() => {
+                        setFetchedData(retrievedData);
+                        setKeyword(data.search);
+                        setSubmitted(true);
+                        setLoading(false);
+                    })
             })
+
             .catch(err => {
                 setLoading(false);
                 setError(true);
