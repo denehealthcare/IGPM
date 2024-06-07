@@ -25,6 +25,17 @@ export default function index(){
     //State for keyword entered by user
     const [keyword, setKeyword] = useState('');
 
+    //Func to format dates returned by WP api
+    const formatDateDMY = (dateString) => {
+        const date = dateString;
+        const day = date.substring(6, 8);
+        const month = date.substring(4, 6);
+        const year = date.substring(0, 4);
+        const formattedDate = `${day}/${month}/${year}`
+        return formattedDate;
+    }
+
+
     const handleFormSubmit = (data) => {
 
         setLoading(true);
@@ -39,11 +50,12 @@ export default function index(){
 
                 //Make first request and push to results set
                 resp.data.map(data => {
+
                     retrievedData.push({
                         name: data.acf.accreditee_name,
                         active: data.acf.active,
                         county: data.acf.county,
-                        date: data.acf.date_achieved,
+                        date: formatDateDMY(data.acf.date_achieved),
                         registration: data.acf.registration_number
                     })
                 })
@@ -65,7 +77,7 @@ export default function index(){
                                         name: data.acf.accreditee_name,
                                         active: data.acf.active,
                                         county: data.acf.county,
-                                        date: data.acf.date_achieved,
+                                        date: formatDateDMY(data.acf.date_achieved),
                                         registration: data.acf.registration_number
                                     })
                                 })
