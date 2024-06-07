@@ -45,7 +45,6 @@ export default function Id (){
 
         } else {
 
-            console.log(postParam)
 
             setError(false);
 
@@ -67,7 +66,7 @@ export default function Id (){
                     
                     //If a featured image has been included add to the pushed object, if not do not add a key value
                     try {
-                        retrievedPost.image = post._embedded["wp:featuredmedia"][0].source_url;
+                        retrievedPost.image = resp.data._embedded["wp:featuredmedia"][0].source_url;
                     }
                     catch {
                         retrievedPost.image = "/images/default-news-image.jpg"
@@ -90,19 +89,12 @@ export default function Id (){
 
                         })
                         .catch(err => {
-
                             setError(true);
-                            console.log(err)
-
                         })
 
                 })
                 .catch(err => {
-
                     setError(true);
-                    console.log(err)
-
-
                 }));
 
 
