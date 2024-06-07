@@ -13,6 +13,7 @@ import 'animate.css';
 
 
 export default function news(){
+    
     const options = {
         rootMargin: '0px',
         threshold: 0,
@@ -200,7 +201,11 @@ export default function news(){
     const handlePagination = (pageNumber) => {
 
         setCurrentPage(pageNumber);
-
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: "smooth"
+        });
 
     }
 
