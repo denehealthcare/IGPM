@@ -1,34 +1,18 @@
-import React, { useEffect } from 'react';
+import Script from 'next/script';
 
-const PayPalButton = () => {
-    useEffect(() => {
-        // Load the PayPal SDK script
-        const script = document.createElement('script');
-        script.src = 'https://www.paypal.com/sdk/js?client-id=sb&vault=true&intent=subscription';
-        script.setAttribute('data-sdk-integration-source', 'button-factory');
-        script.async = true;
-        script.onload = () => {
-            paypal.Buttons({
-                style: {
-                    shape: 'rect',
-                    color: 'gold',
-                    layout: 'vertical',
-                    label: 'subscribe'
-                },
-                createSubscription: function (data, actions) {
-                    return actions.subscription.create({
-                        plan_id: 'P-9AC4713973647582WMA7HEIQ'
-                    });
-                },
-                onApprove: function (data, actions) {
-                    alert(data.subscriptionID); // You can add optional success message for the subscriber here
-                }
-            }).render('#paypal-button-container');
-        };
-        document.body.appendChild(script);
-    }, []);
+export default function PaypalButton(){
 
-    return <div id="paypal-button-container"></div>;
-};
-
-export default PayPalButton;
+    return (
+        <>
+            <Script  
+                src="https://www.paypal.com/sdk/js?client-id=BAAlGfbM8N1Lkb5nw26HO59BLpXaV53SgPVnV7yuhQIGjIcPTlhqW_h-A16bvk4OXhDKZec9adaXGGHbes&components=hosted-buttons&disable-funding=venmo&currency=GBP" id="show-paypal"
+                onReady={()=> {
+                    paypal.HostedButtons({
+                        hostedButtonId: "TFZMMVDAP37NL",
+                    }).render("#paypal-container-TFZMMVDAP37NL")
+                }}
+                />
+            <div id="paypal-container-TFZMMVDAP37NL"></div>
+        </>
+    )
+}

@@ -36,12 +36,11 @@ export default function Membership(){
                     <img src="/images/membership-group.png" alt="image of a group of people smiling" className="sm:max-w-[500px]"></img>
 {/*                     <a target="_blank" className="w-[100%] sm:max-w-[500px] lg:w-[100%]" href="https://www.paypal.com/webapps/hermes?token=32R33450PE0069346&useraction=commit&wpsFlowRedirectToXorouterSkipHermesStartTime=1697029841117&mfid=1697029840826_f7309533ee478"><button className="bg-[#1B4E70] hover:bg-[#72C6ED] hover:text-[black] w-[100%] sm:max-w-[500px] lg:w-[100%] py-[8px] rounded-[8px] mt-3 text-white">Buy Now</button></a>
  */}
-                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" className="mt-3">
-                        <input type="hidden" name="cmd" value="_s-xclick" />
-                        <input type="hidden" name="hosted_button_id" value="JVD3ZGTXYMJLN" />
-                        <input type="hidden" name="currency_code" value="GBP" />
-                        <input type="image" src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Subscribe" />
-                    </form>
+                <div className="mt-5">
+                    <PayPalButton />
+                </div>
+
+
                 </div>
 
             </div>
