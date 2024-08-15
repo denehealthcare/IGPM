@@ -167,9 +167,11 @@ export default function Accreditation(){
 
         </div>
 
-            <div className={`${inView ? 'animate__animated animate__fadeInRight opacity-100' : 'opacity-0'} mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[20px]`}>
-
+            <div className={`${inView ? 'animate__animated animate__fadeInRight opacity-100' : 'opacity-0'} mt-16`}>
                 <h3  className="text-[1.56rem] text-[#484848] mb-5">Accreditation process</h3>
+            </div>
+
+            <div className={`${inView ? 'animate__animated animate__fadeInRight opacity-100' : 'opacity-0'} mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[20px]`}>
 
                 {accordionData.map((data, index) => (
                     <div key={index} className="col-span-1 lg:col-span-1">
@@ -183,7 +185,7 @@ export default function Accreditation(){
     
             </div>
     
-        <div>
+        <div className="mt-5">
             <a href="https://dashboard.igpm.org.uk/wp-content/uploads/2024/06/IGPM-Accreditation-Framework-England-FINAL.pdf"><button class="bg-[#1C4F70] hover:bg-[#72C6ED] px-[29px] py-[9px] text-white rounded-[13px] text-[15px] hover:bg-[#83C5E9]:flex mb-5">Accreditation Framework</button></a>
         </div>
 
