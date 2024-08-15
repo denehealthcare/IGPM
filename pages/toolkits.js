@@ -46,6 +46,10 @@ export default function toolkits(){
                                 The toolkit consolidates statutory requirements and best practice guidance into an easily implementable, procedural resource. The toolkit highlights a range of common themes in trans and non-binary healthcare, from determining a suitable treatment pathway to updating a patient’s name and/or gender marker.
                             </p>
 
+                            <p className="mt-5">
+                                Available via email to IGPM Associate and MIGPM Members only.
+                            </p>
+
                             <a href="https://dashboard.igpm.org.uk/wp-content/uploads/2023/11/Gender-identity-toolkit-for-general-practice-Template-2.0.pdf" target="_blank">
 
                                 <button className="mt-5 bg-[#1C4F70] hover:bg-[#71C6EC] py-[10px] px-[20px] text-white rounded-[8px]">Gender identity Toolkit for general practice</button>
