@@ -48,7 +48,6 @@ export default function OurRepresentatives(){
                         { area: 'BANES, Swindon and Wiltshire', rep: '' },
                         { area: 'Hampshire and Isle of Wight', rep: 'Mark Tyrell MIGPM' },
                         { area: 'Frimley', rep: '' },
-                        { area: 'Sussex', rep: 'Beverley Wallis MIGPM' },
                         { area: 'Surrey Heartlands', rep: '' },
                         { area: 'London (North Central, NE, NW, SE and SW)', rep: 'Caroline O’Dwyer MIGPM' },
                         { area: 'Kent and Medway', rep: '' }
@@ -65,16 +64,16 @@ export default function OurRepresentatives(){
                         rightHeader: 'Rep',
                     },
                     tableRows: [
-                        { area: 'Shropshire, Telford & Wrekin', rep: 'Jenny Davies' },
+                        { area: 'Shropshire, Telford & Wrekin', rep: 'Jenny Davies MIGPM' },
                         { area: 'Hereford & Worcestershire', rep: 'Ceri Chaplin MIGPM' },
                         { area: 'Birmingham & Solihull', rep: '' },
-                        { area: 'Coventry & Warwickshire', rep: '' },
+                        { area: 'Coventry & Warwickshire', rep: 'Benjamin Haresign MIGPM' },
                         { area: 'Bucks, Oxon & Berkshire', rep: '' },
                         { area: 'Herts & West Essex', rep: 'Becky Pittuck  MIGPM' },
                         { area: 'Northamptonshire', rep: '' },
                         { area: 'Leicestershire & Rutland', rep: 'Keleigh Atkin MIPGM' },
                         { area: 'Beds, Luton & Milton Keynes', rep: '' },
-                        { area: 'Cambridgeshire & Peterborough', rep: 'Melanie Gearing' },
+                        { area: 'Cambridgeshire & Peterborough', rep: 'Melanie Gearing MIGPM' },
                         { area: 'Suffolk & NE Essex', rep: '' },
                         { area: 'Norfolk & Waveney', rep: '' },
                     ],
@@ -91,8 +90,8 @@ export default function OurRepresentatives(){
                         rightHeader: 'Rep'
                     },
                     tableRows: [
-                        { area: 'Cheshire and Merseyside ICB', rep: '', repTwo: '' },
-                        { area: 'Derby and Derbyshire ICB', rep: 'Carla Mathurin MIGPM', repTwo: 'Michelle Nutbrown' },
+                        { area: 'Cheshire and Merseyside ICB', rep: 'Simon Turton MIGOPM', repTwo: '' },
+                        { area: 'Derby and Derbyshire ICB', rep: 'Carla Mathurin MIGPM', repTwo: 'Michelle Nutbrown MIGPM' },
                         { area: 'Greater Manchester ICB', rep: 'Lynsey Philbin MIGPM', repTwo: '' },
                         { area: 'Humber and North Yorkshire ICB', rep: 'Richard Langthorp MIGPM', repTwo: '' },
                         { area: 'Lancashire and South Cumbria ICB', rep: '', repTwo: '' },
@@ -102,15 +101,22 @@ export default function OurRepresentatives(){
                         { area: 'South Yorkshire ICB', rep: '', repTwo: '' },
                         { area: 'Staffordshire and Stoke on Trent ICB', rep: '', repTwo: '' },
                         { area: 'West Yorkshire ICB', rep: 'Sally Oldbury MIGPM', repTwo: ' Sarah Rhodes-Bickerdyke MIGPM' },
-
-
-
-
-
-
-
-
-
+                    ],
+                }
+            ]
+        },
+        {
+            rep: 'National',
+            table: [
+                {
+                    tableHeaders: {
+                        leftHeader: 'ICB',
+                        middleHeader: 'Rep',
+                        rightHeader: 'Rep'
+                    },
+                    tableRows: [
+                        { area: 'Dispensing Representative', rep: 'Ed Kennedy MIGPM' },
+                        { area: 'PCN Representative', rep: 'Sarah Cole MIGPM' },
                     ],
                 }
             ]
