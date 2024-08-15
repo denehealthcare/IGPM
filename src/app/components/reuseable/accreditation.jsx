@@ -19,50 +19,64 @@ export default function Accreditation(){
         {
             title: 'How to apply', 
             content: 
-            <p>
-                Applications can be submitted for assessment during the following calendar months; January, May and September.
-            </p>
+            <>
+                <p className="mb-5">
+                    To apply for Accreditation please email info@igpm.org.uk. An application fee of £280 plus VAT is payable prior to receiving your application pack.
+                </p>
+                <p className="mb-5">
+                    The application form is broken down into 10 domains, and then further into bullet points within the domains.
+                </p>
+                <p className="mb-5">
+                    Your submission would consist of addressing these points in written form.
+                </p>
+                <p className="mb-5">
+                    Once completed your application can be submitted by email to info@igpm.org.uk, for one of our assessment sessions.
+                </p>
+                <p className="mb-5">
+                    These are held three times a year, January, May and September. The application deadline for each is the last day of the previous month.
+                </p>
+            </>
         },
 
         {
-            title: 'Fee Structure',
+            title: 'Assessment',
             content:
             <>
                 <p>
-                     One-off Accreditation fee – £280 plus VAT                
+                    Once received, your application will be edited for your anonymity.                
                 </p>
 
                 <p className="mt-5">
-                    Resubmission (should your application not meet the criteria) – £120 plus VAT within 12 months
+                    Your application will be assessed by a panel of three independent assessors.
                 </p>
 
                 <p className="mt-5">
-                    The annual retainer fee for MIGPM is £85 plus VAT. This is subject to review every 3 years.               
+                    Then each assessment session is externally moderated.               
                 </p>
 
                 <p className="mt-5">
-                    To apply for accreditation please email info@igpm.org.uk, fee of £280 plus VAT is payable prior to receiving your application pack.              
+                    Outcomes will be communicated to the applicants by email.
                 </p>
             </>
         },
         {
-            title: 'Submission',
+            title: 'Outcome',
             content:
             <>
                 <p>
-                    Once you have paid and completed your application form, this should be returned to the office (info@igpm.org.uk) and the team will acknowledge receipt. 
+                    Successful applicants will receive their printable certificate, their MIGPM e-signature and a place on our Accredited managers register.
                 </p>
     
                 <p className="mt-5">
-                    Following the meeting of the assessment panel during the application window, the outcome will be communicated via email to the candidate. 
+                    The annual retainer fee for MIGPM, which replaces the Associate membership fee, IS £85 plus VAT. This is subject to review every 3 years.
                 </p>
     
                 <p className="mt-5">
-                    Successful candidates will receive their printable certificate and e-signature.           
+                    If the candidate did not meet the criteria on this occasion, this will be explained via email for the opportunity to resubmit.
                 </p>
     
                 <p className="mt-5">
-                    If the candidate did not meet the criteria on this occasion, this will be explained via email for the opportunity to resubmit. 
+                    Resubmission (should your application not meet the criteria) - £120 plus VAT within 12 months.
                 </p>
             </>
         },
@@ -87,19 +101,22 @@ export default function Accreditation(){
             <div className="grid grid-cols-2 mt-[35px] sm:mt-[60px] lg:mt-[100px]">
 
                 <div ref={ref} className={`${inView ? 'animate__animated animate__fadeInLeft opacity-100' : 'opacity-0'} col-span-2 lg:col-span-1`}>
-    
+
                     <p>
-                        The IGPM has been created to support the development and career progression of the General Practice Management community and provide a governing body through which managers can become accredited and fully recognised as a distinct profession.
+                        The IGPM has been created to support the development and career progression of the General Practice Management community and to provide a governing body through which managers can become accredited and fully recognised as a distinct profession.
                     </p>
     
                     <p className="mt-5">
-                        To become an Associate of the IGPM you may apply and pay an annual retention fee. If the Associate is appropriately experienced, they may apply to be accredited as a full Member of the IGPM.
+                        Associate members of the IGPM can apply, if the Associate is appropriately experienced, to be accredited as a full Member of the IGPM.
                     </p>
     
                     <p className="mt-5">
-                        To become accredited, and obtain the level of Member of the Institute of General Practice Management (MIGPM), Associates must apply to be assessed by an accreditation panel.
+                        Applicants for the award of Member of the Institute of General Practice Management (MIGPM) must demonstrate the required proficiency as detailed in the accreditation framework.
                     </p>
-    
+
+                    <p className="mt-5">
+                        Comprehensive written evidence needs to be supplied in each of 10 domains and the awarding panel must be satisfied that an aggregate pass level has been reached in all of these domains.
+                    </p>
     
                 </div>
     
@@ -109,29 +126,9 @@ export default function Accreditation(){
     
                 </div>
 
-
         </div>
 
             <div ref={ref} className={`${inView ? 'animate__animated animate__fadeInUp opacity-100' : 'opacity-0'} mt-10`}>
-
-                <h3  className="text-[1.56rem] text-[#484848] mb-5">Accreditation process</h3>
-
-                <p>
-                    Applicants for the award of Member of the Institute of General Practice Management (MIGPM) must demonstrate the required proficiency as detailed in the accreditation framework.
-                </p>
-
-                <p className="mt-5">
-                    Comprehensive evidence is required to be able to advance your application.
-                </p>
-
-                <p className="mt-5 mb-5">
-                    Evidence needs to be supplied in each of 10 domains and the awarding panel must be satisfied that an aggregate pass level has been reached in all of these domains
-                </p>
-
-                <a href="https://dashboard.igpm.org.uk/wp-content/uploads/2024/06/IGPM-Accreditation-Framework-England-FINAL.pdf">
-                    <button className="bg-[#1C4F70] hover:bg-[#72C6ED] px-[29px] py-[9px] text-white rounded-[13px] text-[15px] hover:bg-[#83C5E9]:flex mb-5">Accreditation Framework</button>
-                </a>
-
 
                 <h3 className="text-[1.56rem] text-[#484848] mb-5">Suitability</h3>
 
@@ -172,6 +169,8 @@ export default function Accreditation(){
 
             <div className={`${inView ? 'animate__animated animate__fadeInRight opacity-100' : 'opacity-0'} mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[20px]`}>
 
+                <h3  className="text-[1.56rem] text-[#484848] mb-5">Accreditation process</h3>
+
                 {accordionData.map((data, index) => (
                     <div key={index} className="col-span-1 lg:col-span-1">
                         <ArrowAccordion
@@ -184,11 +183,10 @@ export default function Accreditation(){
     
             </div>
     
+        <div>
+            <a href="https://dashboard.igpm.org.uk/wp-content/uploads/2024/06/IGPM-Accreditation-Framework-England-FINAL.pdf"><button class="bg-[#1C4F70] hover:bg-[#72C6ED] px-[29px] py-[9px] text-white rounded-[13px] text-[15px] hover:bg-[#83C5E9]:flex mb-5">Accreditation Framework</button></a>
+        </div>
 
-
-        
-        
-        
         </>
     )
 }
