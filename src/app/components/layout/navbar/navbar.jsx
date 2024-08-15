@@ -9,7 +9,7 @@ export default function Navbar(){
         { link: 'Accreditation', href: '/accreditation', active: false },
         { link: 'Directors', href: '/our-directors', active: false },
         { link: 'Get Involved', href: '/get-involved', active: false },
-        { link: 'Find', href: '/accreditees', active: false },
+        { link: 'MIGPM Register', href: '/accreditees', active: false },
         { link: 'News', href: '/news', active: false },
 
     ];
