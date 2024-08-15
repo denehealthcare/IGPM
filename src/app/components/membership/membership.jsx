@@ -10,7 +10,7 @@ export default function Membership(){
 
                     <h3 class="text-[1.56rem] text[#484848] mb-5">Associate Membership</h3>
                     <p class="mb-5">Associate membership is open to all Managers working within General Practice throughout the UK.</p>
-                    <p class="mb-5">Our Inclusion Criteria can be found here:</p>
+                    <p>Our Inclusion Criteria can be found here:</p>
                     <a href="https://igpm.org.uk/more/membership-inclusion-criteria">
                                 <button className="mt-5 bg-[#1C4F70] hover:bg-[#71C6EC] py-[10px] px-[20px] text-white rounded-[8px] mb-5">Membership Inclusion Criteria</button>
                     </a>
@@ -36,7 +36,8 @@ export default function Membership(){
                     <p class="mb-5">The cost of Associate or Affiliate membership is £50 plus VAT a year (£60) and renews annually.</p>
                     <p class="mb-5">You do not need a PayPal account to pay online.</p>
                     <p class="mb-5">Alternatively you can email the office for an invoice to pay via BACS should you prefer.</p>
-                    <p class="mb-5">Once you have paid, please email info@igpm.org.uk from your @NHS email address. Please include your surgery name and postcode in your email so we can verify your membership. Thank you.</p>
+                    <p class="mb-5">Once you have paid, please email info@igpm.org.uk from your @NHS email address. Please include your surgery name and postcode in your email so we can verify your membership.</p>
+                    <p>Thank you.</p>
 
                 </div>
 
