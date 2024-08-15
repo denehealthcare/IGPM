@@ -9,13 +9,13 @@ export default function Membership(){
                 <div className="col-span-1">
 
                     <h3 class="text-[1.56rem] text[#484848] mb-5">Associate Membership</h3>
-                    <p>Associate membership is open to all Managers working within General Practice throughout the UK.</p>
-                    <p>Our Inclusion Criteria can be found here:</p>
+                    <p class="mb-5">Associate membership is open to all Managers working within General Practice throughout the UK.</p>
+                    <p class="mb-5">Our Inclusion Criteria can be found here:</p>
                     <a href="https://igpm.org.uk/more/membership-inclusion-criteria">
-                                <button className="mt-5 bg-[#1C4F70] hover:bg-[#71C6EC] py-[10px] px-[20px] text-white rounded-[8px]">Membership Inclusion Criteria</button>
+                                <button className="mt-5 bg-[#1C4F70] hover:bg-[#71C6EC] py-[10px] px-[20px] text-white rounded-[8px] mb-5">Membership Inclusion Criteria</button>
                     </a>
                     <p>Benefits include but are not limited to:</p>
-                    <ul className="list-disc ps-10 flex flex-col gap-1 mt-3">
+                    <ul className="list-disc ps-10 flex flex-col gap-1 mt-3 mb-5">
                         <li>The IGPM Whatsapp community - Peer to peer support on a range of topics</li>
                         <li>The IGPM Facebook group - Exclusively for Associate and MIGPM members</li>
                         <li>Our Team of Regional Representatives - Access to local support</li>
@@ -25,18 +25,18 @@ export default function Membership(){
                     </ul>
 
                     <h3 class="text-[1.56rem] text[#484848] mb-5">Affiliate Membership</h3>
-                    <p>Affiliate Membership is available to those in arms length organisations who wish to support IGPM e.g Federations.</p>
+                    <p class="mb-5">Affiliate Membership is available to those in arms length organisations who wish to support IGPM e.g Federations.</p>
                     <h3 class="text-[1.56rem] text[#484848] mb-5">MIGPM Membership</h3>
-                    <p>MIGPM Membership, and a place on our professional register, is awarded to Associate members upon successful completion of our accreditation process.</p>
-                    <p>They must have had a minimum or two years relevant experience to apply.</p>
-                    <p>Being awarded MIGPM membership demonstrates that the manager works to a high standard across the wide range of skills required by the role.</p>
-                    <p>To learn more about our Accreditation process please visit our Accreditation page.</p>
+                    <p class="mb-5">MIGPM Membership, and a place on our professional register, is awarded to Associate members upon successful completion of our accreditation process.</p>
+                    <p class="mb-5">They must have had a minimum or two years relevant experience to apply.</p>
+                    <p class="mb-5">Being awarded MIGPM membership demonstrates that the manager works to a high standard across the wide range of skills required by the role.</p>
+                    <p class="mb-5">To learn more about our Accreditation process please visit our Accreditation page.</p>
 
                     <h3 class="text-[1.56rem] text[#484848] mb-5">Membership Fee</h3>
-                    <p>The cost of Associate or Affiliate membership is £50 plus VAT a year (£60) and renews annually.</p>
-                    <p>You do not need a PayPal account to pay online.</p>
-                    <p>Alternatively you can email the office for an invoice to pay via BACS should you prefer.</p>
-                    <p>Once you have paid, please email info@igpm.org.uk from your @NHS email address. Please include your surgery name and postcode in your email so we can verify your membership. Thank you.</p>
+                    <p class="mb-5">The cost of Associate or Affiliate membership is £50 plus VAT a year (£60) and renews annually.</p>
+                    <p class="mb-5">You do not need a PayPal account to pay online.</p>
+                    <p class="mb-5">Alternatively you can email the office for an invoice to pay via BACS should you prefer.</p>
+                    <p class="mb-5">Once you have paid, please email info@igpm.org.uk from your @NHS email address. Please include your surgery name and postcode in your email so we can verify your membership. Thank you.</p>
 
                 </div>
 
