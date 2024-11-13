@@ -61,19 +61,33 @@ export default function OurDirectors(){
 
                 <div className="mt-[40px] grid gap-[20px] justify-center sm:grid-cols-4 flex-wrap">
 
-                <div className="col-span-4 sm:justify-self-end sm:col-span-2 2xl:col-span-1">
+                    <div className="col-span-4 sm:justify-self-end sm:col-span-2 2xl:col-span-1">
 
-                    <Director
-                        url={'#'}
-                        image={'/images/Alison-Daff.png'}
-                        name={'Alison Daff'}
-                        backgroundColor={'#83C5E9'}
-                        job={'Business Manager'}
-                    />
+                        <Director
+                            url={'#'}
+                            image={'/images/Alison-Daff.png'}
+                            name={'Alison Daff'}
+                            backgroundColor={'#83C5E9'}
+                            job={'Business Manager'}
+                        />
 
-                    </div>                    
+                        </div>                    
 
-                </div>
+                    </div>
+
+                    <div className="col-span-4 sm:justify-self-end sm:col-span-2 2xl:col-span-1">
+
+                        <Director
+                            url={'#'}
+                            image={'/images/Samantha-Alley.png'}
+                            name={'Samantha Alley'}
+                            backgroundColor={'#83C5E9'}
+                            job={'Membership Officer'}
+                        />
+
+                        </div>                    
+
+                    </div>
 
             </div>
         </>
