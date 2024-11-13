@@ -13,7 +13,7 @@ export default function OurDirectors(){
         <>
             <div className="mt-[140px] lg:mt-[200px]">
 
-                <h1 className="text-[#484848]">Our Directors</h1>
+                <h1 className="text-[#484848]">Our Team</h1>
 
                 <p className="mt-4">The Institute of General Practice Management (IGPM) was formed by four working Practice Managers. We are recognised as the professional body that represents all managers working within general practice in the United Kingdom.</p>
 
