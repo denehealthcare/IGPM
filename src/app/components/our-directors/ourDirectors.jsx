@@ -39,6 +39,7 @@ export default function OurDirectors(){
                             image={'/images/nicola-davies.png'}
                             name={'Nicola Davies'}
                             backgroundColor={'#83C5E9'}
+                            job={'Director'}
                         />
 
                     </div>
@@ -51,6 +52,7 @@ export default function OurDirectors(){
                             image={'/images/kay-kean.png'}
                             name={'Kay Keane'}
                             backgroundColor={'#83C5E9'}
+                            job={'Director'}
                         />
 
                     </div>
@@ -66,6 +68,7 @@ export default function OurDirectors(){
                         image={'#'}
                         name={'Alison Daff'}
                         backgroundColor={'#83C5E9'}
+                        job={'Business Manager'}
                     />
 
                     </div>                    
