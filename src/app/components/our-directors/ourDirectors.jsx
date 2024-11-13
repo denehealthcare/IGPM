@@ -65,7 +65,7 @@ export default function OurDirectors(){
 
                     <Director
                         url={'#'}
-                        image={'#'}
+                        image={'/images/Alison_Daff.jpg'}
                         name={'Alison Daff'}
                         backgroundColor={'#83C5E9'}
                         job={'Business Manager'}
