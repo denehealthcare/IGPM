@@ -24,7 +24,7 @@ export default function OurDirectors(){
                         <Director 
                             url={'/our-directors/robyn-clark'}
                             image={'/images/robyn-clark.png'}
-                            name={'Robyn Clark'}
+                            name={'Robyn Clark<br>Director'}
                             backgroundColor={'#83C5E9'}
                         />
 
@@ -36,7 +36,7 @@ export default function OurDirectors(){
                         <Director
                             url={'/our-directors/nicola-davies'}
                             image={'/images/nicola-davies.png'}
-                            name={'Nicola Davies'}
+                            name={'Nicola Davies<br>Director'}
                             backgroundColor={'#83C5E9'}
                         />
 
@@ -48,11 +48,26 @@ export default function OurDirectors(){
                         <Director
                             url={'/our-directors/kay-kean'}
                             image={'/images/kay-kean.png'}
-                            name={'Kay Keane'}
+                            name={'Kay Keane<br>Director'}
                             backgroundColor={'#83C5E9'}
                         />
 
                     </div>
+
+                </div>
+
+                <div className="mt-[40px] grid gap-[20px] justify-center sm:grid-cols-4 flex-wrap">
+
+                <div className="col-span-4 sm:justify-self-end sm:col-span-2 2xl:col-span-1">
+
+                    <Director
+                        url={'#'}
+                        image={'#'}
+                        name={'Alison Daff<br>Business Manager'}
+                        backgroundColor={'#83C5E9'}
+                    />
+
+                    </div>                    
 
                 </div>
 
