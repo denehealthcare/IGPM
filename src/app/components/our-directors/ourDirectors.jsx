@@ -4,7 +4,7 @@ export default function OurDirectors(){
 
     const directors = [
 
-        { url: '/', image: '/images/director.png', name: 'Robyn Clark', backgroundColor: '#83C5E9' }
+        { url: '/', image: '/images/director.png', name: 'Robyn Clark', backgroundColor: '#83C5E9', job: '' }
 
     ];
 
@@ -26,6 +26,7 @@ export default function OurDirectors(){
                             image={'/images/robyn-clark.png'}
                             name={'Robyn Clark'}
                             backgroundColor={'#83C5E9'}
+                            job={'Director'}
                         />
 
                     </div>
