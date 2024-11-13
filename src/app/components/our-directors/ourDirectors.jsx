@@ -71,11 +71,7 @@ export default function OurDirectors(){
                             job={'Business Manager'}
                         />
 
-                    </div>                    
-
-                </div>
-
-                <div className="mt-[40px] grid gap-[20px] justify-center sm:grid-cols-4 flex-wrap">
+                    </div>    
 
                     <div className="col-span-4 sm:justify-self-end sm:col-span-2 2xl:col-span-1">
 
@@ -87,11 +83,9 @@ export default function OurDirectors(){
                             job={'Membership Officer'}
                         />
 
-                    </div>                    
+                    </div>                                    
 
                 </div>
-
-                    
 
             </div>
         </>
