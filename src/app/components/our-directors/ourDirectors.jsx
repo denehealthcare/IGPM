@@ -87,6 +87,58 @@ export default function OurDirectors(){
 
                 </div>
 
+                <div className="mt-[40px] grid gap-[20px] justify-center sm:grid-cols-4 flex-wrap">
+
+                    <div className="col-span-4 sm:justify-self-end sm:col-span-2 2xl:col-span-1">
+
+                        <Director
+                            url={'#'}
+                            image={'/images/Mike-Neville.png'}
+                            name={'Mike Neville'}
+                            backgroundColor={'#83C5E9'}
+                            job={'National Lead - North'}
+                        />
+
+                    </div>    
+
+                    <div className="col-span-4 sm:justify-self-end sm:col-span-2 2xl:col-span-1">
+
+                        <Director
+                            url={'#'}
+                            image={'/images/Pete-Maynard.png'}
+                            name={'Pete Maynard'}
+                            backgroundColor={'#83C5E9'}
+                            job={'National Lead - South'}
+                        />
+
+                    </div>
+
+                    <div className="col-span-4 sm:justify-self-end sm:col-span-2 2xl:col-span-1">
+
+                        <Director
+                            url={'#'}
+                            image={'/images/Ceri-Gardener.png'}
+                            name={'Ceri Gardener'}
+                            backgroundColor={'#83C5E9'}
+                            job={'National Lead - Midlands'}
+                        />
+
+                    </div>    
+
+                    <div className="col-span-4 sm:justify-self-end sm:col-span-2 2xl:col-span-1">
+
+                        <Director
+                            url={'#'}
+                            image={'/images/Gareth-Thomas.png'}
+                            name={'Gareth Thomas'}
+                            backgroundColor={'#83C5E9'}
+                            job={'National Lead - Wales'}
+                        />
+
+                    </div>                                  
+
+                </div>
+
             </div>
         </>
     )
