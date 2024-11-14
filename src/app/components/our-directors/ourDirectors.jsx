@@ -105,7 +105,7 @@ export default function OurDirectors(){
 
                         <Director
                             url={'#'}
-                            image={'/images/Pete-Maynard.png'}
+                            image={'/images/Peter-Maynard.png'}
                             name={'Pete Maynard'}
                             backgroundColor={'#83C5E9'}
                             job={'National Lead - South'}
