@@ -64,7 +64,7 @@ export default function OurRepresentatives(){
                         rightHeader: 'Rep',
                     },
                     tableRows: [
-                        { area: 'Shropshire, Telford & Wrekin', rep: 'Jenny Davies MIGPM' },
+                        { area: 'Shropshire, Telford & Wrekin', rep: '' },
                         { area: 'Hereford & Worcestershire', rep: 'Ceri Chaplin MIGPM' },
                         { area: 'Birmingham & Solihull', rep: '' },
                         { area: 'Coventry & Warwickshire', rep: 'Benjamin Haresign MIGPM' },
