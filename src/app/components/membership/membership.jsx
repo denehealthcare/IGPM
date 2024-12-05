@@ -50,14 +50,6 @@ export default function Membership(){
                         <PayPalButton />
                     </div>
 
-                    <div className="mt-6">
-                        <iframe class="eb-widget" id="eb-widget-membership-type-list" 
-                        name="eb-widget-membership-type-list" 
-                        data-auto-adjust-height="true" 
-                        data-auto-adjust-width="true" 
-                        ></iframe>
-                    </div>
-
                 </div>
 
             </div>
