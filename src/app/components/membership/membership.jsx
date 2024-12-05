@@ -55,7 +55,7 @@ export default function Membership(){
                         name="eb-widget-membership-type-list" 
                         data-auto-adjust-height="true" 
                         data-auto-adjust-width="true" 
-                        style="" src="https://igpm.glueup.com/organization/6758/widget/membership-type-list/"></iframe>
+                        ></iframe>
                     </div>
 
                 </div>
