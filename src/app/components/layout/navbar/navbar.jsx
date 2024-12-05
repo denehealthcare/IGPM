@@ -7,7 +7,7 @@ export default function Navbar(){
 
     const navigation = [
         { link: 'Accreditation', href: '/accreditation', active: false },
-        { link: 'Directors', href: '/our-directors', active: false },
+        { link: 'Our Team', href: '/our-directors', active: false },
         { link: 'Get Involved', href: '/get-involved', active: false },
         { link: 'MIGPM Register', href: '/accreditees', active: false },
         { link: 'News', href: '/news', active: false },
