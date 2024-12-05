@@ -11,6 +11,7 @@ export default function Footer(){
         {title: 'Toolkits', href: '/toolkits' },
         {title: 'Regulatory Process', href: '/more/regulatory-process' },
         {title: 'PCN Managers', href: '/more/pcn-managers' },
+        {title: 'Our Newsletter', href: 'https://mailchi.mp/a499843ce039/the-igpm-institute-of-general-practice-management-newsletter' },
     ];
 
     const about = [
