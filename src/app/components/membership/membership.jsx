@@ -57,7 +57,11 @@ export default function Membership(){
                     <div>
                         <script src='https://app.glueup.com/compiled/js/eb-widgets.min.js' type='text/javascript'></script>
                         <script>require(['https://app.glueup.com/compiled/js/eb-widgets.min']);</script>
-                        <iframe class="eb-widget" id="eb-widget-membership-type-list" name="eb-widget-membership-type-list" data-auto-adjust-height="true" data-auto-adjust-width="true" style="display:block; margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background:transparent; " src="https://igpm.glueup.com/organization/6758/widget/membership-type-list/"></iframe>
+                        <iframe class="eb-widget" id="eb-widget-membership-type-list" 
+                        name="eb-widget-membership-type-list" 
+                        data-auto-adjust-height="true" 
+                        data-auto-adjust-width="true" 
+                        style="" src="https://igpm.glueup.com/organization/6758/widget/membership-type-list/"></iframe>
                     </div>
 
                 </div>
