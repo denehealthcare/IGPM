@@ -100,7 +100,6 @@ export default function OurRepresentatives(){
                         { area: 'Nottingham and Nottinghamshire ICB', rep: '', repTwo: '' },
                         { area: 'South Yorkshire ICB', rep: '', repTwo: '' },
                         { area: 'Staffordshire and Stoke on Trent ICB', rep: '', repTwo: '' },
-                        { area: 'West Yorkshire ICB', rep: 'Sally Oldbury MIGPM', repTwo: ' Sarah Rhodes-Bickerdyke MIGPM' },
                     ],
                 }
             ]
