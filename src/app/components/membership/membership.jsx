@@ -50,11 +50,7 @@ export default function Membership(){
                         <PayPalButton />
                     </div>
 
-                    <div>
-                        <a href='#'></a>
-                    </div>
-
-                    <div>
+                    <div className="mt-5">
                         <script src='https://app.glueup.com/compiled/js/eb-widgets.min.js' type='text/javascript'></script>
                         <script>require(['https://app.glueup.com/compiled/js/eb-widgets.min']);</script>
                         <iframe class="eb-widget" id="eb-widget-membership-type-list" 
