@@ -13,9 +13,9 @@ export default function PaypalButton(){
                 }}
                 />
             <div id="paypal-container-TFZMMVDAP37NL"></div>
-            <div>
+            <>
                 <Script src='https://app.glueup.com/compiled/js/eb-widgets.min.js' async/>
-            </div>
+            </>
         </>
     )
 }
