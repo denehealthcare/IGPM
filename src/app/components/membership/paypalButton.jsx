@@ -13,6 +13,7 @@ export default function PaypalButton(){
                 }}
                 />
             <div id="paypal-container-TFZMMVDAP37NL"></div>
+            <div>.</div>
         </>
     )
 }
