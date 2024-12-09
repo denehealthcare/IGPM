@@ -12,7 +12,7 @@ export default function PaypalButton(){
                     }).render("#paypal-container-TFZMMVDAP37NL")
                 }}
                 />
-            <div id="paypal-container-TFZMMVDAP37NL"></div>
+            {/*<div id="paypal-container-TFZMMVDAP37NL"></div>*/}
             <>
                 <Script src='https://app.glueup.com/compiled/js/eb-widgets.min.js' async/>
             </>
