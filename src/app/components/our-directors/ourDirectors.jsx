@@ -111,19 +111,7 @@ export default function OurDirectors(){
                             job={'National Lead - South'}
                         />
 
-                    </div>
-
-                    <div className="col-span-4 sm:justify-self-end sm:col-span-2 2xl:col-span-1">
-
-                        <Director
-                            url={'#'}
-                            image={'/images/Ceri-Gardener.png'}
-                            name={'Ceri Gardener'}
-                            backgroundColor={'#83C5E9'}
-                            job={'National Lead - Midlands'}
-                        />
-
-                    </div>    
+                    </div>  
 
                     <div className="col-span-4 sm:justify-self-end sm:col-span-2 2xl:col-span-1">
 
