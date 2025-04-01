@@ -32,17 +32,7 @@ export default function OurDirectors(){
                     </div>
 
 
-                    <div className="col-span-4  sm:col-span-2 2xl:col-span-1">
 
-                        <Director
-                            url={'/our-directors/nicola-davies'}
-                            image={'/images/nicola-davies.png'}
-                            name={'Nicola Davies'}
-                            backgroundColor={'#83C5E9'}
-                            job={'Director'}
-                        />
-
-                    </div>
 
 
                     <div className="col-span-4 sm:justify-self-end sm:col-span-2 2xl:col-span-1">
