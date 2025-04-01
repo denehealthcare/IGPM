@@ -31,10 +31,6 @@ export default function OurDirectors(){
 
                     </div>
 
-
-
-
-
                     <div className="col-span-4 sm:justify-self-end sm:col-span-2 2xl:col-span-1">
 
                         <Director
