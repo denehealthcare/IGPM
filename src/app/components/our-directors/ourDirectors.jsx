@@ -43,6 +43,42 @@ export default function OurDirectors(){
 
                     </div>
 
+                    <div className="col-span-4 sm:justify-self-end sm:col-span-2 2xl:col-span-1">
+
+                        <Director
+                            url={'/our-directors/ceri-chaplin'}
+                            image={'/images/ceri-chaplin.png'}
+                            name={'Ceri Chaplin'}
+                            backgroundColor={'#83C5E9'}
+                            job={'Director'}
+                        />
+
+                    </div>
+
+                    <div className="col-span-4 sm:justify-self-end sm:col-span-2 2xl:col-span-1">
+
+                        <Director
+                            url={'/our-directors/edward-kennedy'}
+                            image={'/images/edward-kennedy.png'}
+                            name={'Edward Kennedy'}
+                            backgroundColor={'#83C5E9'}
+                            job={'Director'}
+                        />
+
+                    </div>
+
+                    <div className="col-span-4 sm:justify-self-end sm:col-span-2 2xl:col-span-1">
+
+                        <Director
+                            url={'/our-directors/adrian-down'}
+                            image={'/images/adrian-down.png'}
+                            name={'Adrian Down'}
+                            backgroundColor={'#83C5E9'}
+                            job={'Director'}
+                        />
+
+                    </div>
+
                 </div>
 
                 <div className="mt-[40px] grid gap-[20px] justify-center sm:grid-cols-4 flex-wrap">
