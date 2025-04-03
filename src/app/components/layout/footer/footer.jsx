@@ -21,6 +21,7 @@ export default function Footer(){
         { title: 'Webinars', href: '/webinars' },
         { title: 'Membership inclusion criteria', href: '/more/membership-inclusion-criteria' },
         { title: 'Our Campaigns', href: '/about-igpm/our-campaigns' },
+        { title: 'IGPM Constitution', href: '/about-igpm/igpm-constitution' },
     ];
 
 
