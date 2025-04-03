@@ -35,7 +35,7 @@ export default function CeriChaplin() {
 
                 <div ref={ref} className={`${inView ? 'animate__animated animate__fadeInRight opacity-100' : 'opacity-0'}`}>
 
-                    <h1 className="text-[#484848]">ceri-chaplin</h1>
+                    <h1 className="text-[#484848]">Ceri Chaplin</h1>
 
                     <p className="mt-5 md:mt-6">
                     Ceri started his career in healthcare as a graduate trainee with Boots Opticians.  After 7 years in a variety of store management roles, Ceri spent 2 years in a Hospital Trust in Wales in general management.  Following this, the next 6 years were spent managing primary care complaints on behalf of 6 Local Health Board before moving for 2 years following a reorganisation to manage Complaints, Claims and Patient Safety at a large Local Health Board in South Wales.
